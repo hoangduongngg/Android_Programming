@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/tech_img"
+        android:src="@drawable/cloudstorage"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tech_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/tech_img"
+        android:fontFamily="@font/be_vietnam_medium"
+        android:text="Cloud Storage"
+        android:textAlignment="center"
+        android:textColor="#232323"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tech_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tech_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_toRightOf="@id/tech_img"
+        android:text="Subtitle"
+        android:textColor="#327435"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tech_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tech_sub"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="-15dp"
+        android:layout_toRightOf="@id/tech_img"
+        android:text="A describe for this technology object."
+        android:textColor="#6C6C6C"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

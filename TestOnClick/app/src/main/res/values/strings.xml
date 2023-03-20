@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestOnClick</string>
+    <string-array name="PhepTinh">
+        <item>Tong</item>
+        <item>Hieu</item>
+        <item>Tich</item>
+        <item>Thuong</item>
+
+    </string-array>
+</resources>

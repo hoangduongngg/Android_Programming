@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="56dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/baseline_keyboard_backspace_24"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/username_signup"
+        android:layout_width="277dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:fontFamily="@font/be_vietnam"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:textColor="#969696"
+        android:textColorHint="#707070"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="277dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:fontFamily="@font/be_vietnam"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#A7A7A7"
+        android:textColorHint="#969696"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="180dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="52dp"
+        android:background="#000000"
+        android:fontFamily="@font/be_vietnam_semibold"
+        android:text="sign up"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="239dp"
+        android:fontFamily="@font/be_vietnam_semibold"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/dob"
+        app:layout_constraintEnd_toEndOf="@+id/username_signup"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="309dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:fontFamily="@font/be_vietnam"
+        android:inputType="textPersonName"
+        android:text="Your name"
+        android:textColor="#969696"
+        app:layout_constraintBottom_toTopOf="@+id/dob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="273dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:fontFamily="@font/be_vietnam"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#969696"
+        app:layout_constraintBottom_toTopOf="@+id/signup"
+        app:layout_constraintEnd_toEndOf="@+id/phone"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/dob"
+        app:layout_constraintTop_toBottomOf="@+id/dob"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:fontFamily="@font/be_vietnam"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textColorHint="#969696"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dob"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="71dp"
+        android:ems="10"
+        android:fontFamily="@font/be_vietnam"
+        android:hint="Date of Birth"
+        android:inputType="date"
+        android:textColorHint="#969696"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:text="Already have an account? Login here!"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
