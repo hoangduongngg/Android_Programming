@@ -35,7 +35,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         str += student.getName();
 
-        img.setImageResource(student.getImg());
+//        img.setImageResource(student.getImg());
         txt.setText(str);
         bt.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -21,9 +21,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 intent.putExtra("name", "Nguyen Van A");
-                intent.putExtra("age", "20");
+                intent.putExtra("age", 20);
+
                 String[] subs = {"aaa", "bbb"};
                 intent.putExtra("subs", subs);
+
                 Student student = new Student(R.drawable.cat1, "Nguyen Van A");
                 intent.putExtra("student", student);
 
